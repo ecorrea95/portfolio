@@ -152,10 +152,10 @@ h2 {
 }
 
 #errormessage {
+  transition: all 0.5s ease;
   margin-bottom: 20px;
   background: #fe8b8e;
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  transition: all 0.5s ease;
 }
