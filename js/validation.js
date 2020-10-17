@@ -29,7 +29,7 @@ function validate_eng(){
   return true;
 };
 
-function validate_eng(){
+function validate_esp(){
   var name = document.getElementById("nombre").value;
   var email = document.getElementById("email").value;
   var subject = document.getElementById("asunto").value;
