@@ -1,8 +1,8 @@
 function validate(){
-  var name = document.getElementById("name").value;
+  var name = document.getElementById("nombre").value;
   var email = document.getElementById("email").value;
-  var subject = document.getElementById("subject").value;
-  var message = document.getElementById("message").value;
+  var subject = document.getElementById("asunto").value;
+  var message = document.getElementById("mensaje").value;
   var errormessage = document.getElementById("errormessage");
 
   var text;
@@ -26,8 +26,5 @@ function validate(){
     errormessage.innerHTML = text;
     return false;
   }
-  // alert("Message sent!");
-  // text = "Message sent!";
-  // successmessage.innerHTML = text;
   return true;
 };
