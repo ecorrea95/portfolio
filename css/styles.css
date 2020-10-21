@@ -159,3 +159,96 @@ h2 {
   font-size: 14px;
   font-weight: bold;
 }
+
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.button-image {
+  position: relative;
+}
+
+.button-image img {
+  width: 100%;
+  height: auto;
+}
+
+.button-image span {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  left: 0%;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  padding: 12px 24px;
+  display: none;
+}
+
+.button-image .button {
+  position: absolute;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  display: none;
+}
+
+.see-p {
+  left: 30%;
+}
+
+.see-p:hover {
+  background-color: #0531a2;
+}
+
+.see-c {
+  left: 70%;
+}
+
+.see-c:hover {
+  background-color: #2b3339;
+}
+
+.overlay {
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.button-image:hover .overlay {
+  opacity: 0.5;
+}
+
+.button-image:hover .button, .button-image:hover span {
+  display: inline;
+}
+
+.button-image:hover .button {
+  opacity: 1;
+}
