@@ -26,12 +26,16 @@ h1 {
   transition: transform 0.5s;
 }
 
-h1:hover {
+h1.text-center span:hover {
   color: #0531a2;
 }
 
 h1 span.text-primary:hover {
   color: #000000;
+
+  h1.text-center:hover{
+
+  }
 }
 
 .subheading {
@@ -67,7 +71,7 @@ h2 {
 
 .img-profile {
   display: block;
-  max-width: 20%;
+  width: 15%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -218,6 +222,14 @@ h2 {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 5px;
   display: none;
+}
+
+.see-unique {
+  left: 50%;
+}
+
+.see-unique:hover {
+  background-color: #0531a2;
 }
 
 .see-p {
