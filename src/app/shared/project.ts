@@ -4,4 +4,6 @@ export class Project {
     cover: string;
     seecode: string;
     seeproject: string;
+    featured: boolean;
 }
+

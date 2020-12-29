@@ -1,3 +1,8 @@
-<p>
-  projects works!
-</p>
+<ul class="list-group">
+  <li *ngFor="let project of projects">
+    <img src="{{project.image}}" alt="{{project.name}}">
+    <h3>{{project.name}}</h3>
+    <button><a href="{{project.seecode}}">See code</a></button>
+    <button><a href="{{project.seeproject}}">See Project</a></button>
+  </li>
+</ul>

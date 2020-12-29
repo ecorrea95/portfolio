@@ -1,3 +1,24 @@
-<p>
-  contact works!
-</p>
+<section class="bg-dark padding" id="contact">
+  <div class="container text-center bg-light rounded">
+    <h2 class="mb-4 contact">Contact</h2>
+    <div id="errormessage"></div>
+    <form id="myform" onsubmit="return validate_eng();" method="POST" data-netlify="true">
+      <div class="form-row">
+        <div class="col-4">
+          <input type="text" class="form-control mb-3" placeholder="Name" id="nombre" name="nombre">
+          <div class="status"></div>
+          <input type="text" class="form-control mb-3" placeholder="Email Address" id="email" name="email">
+          <div class="status"></div>
+          <input type="text" class="form-control mb-3" placeholder="Subject" id="asunto" name="asunto">
+          <div class="status"></div>
+          <button class="form-control btn btn-primary" type="submit">Send</button>
+        </div>
+        <div class="col-8">
+          <div class="msg">
+            <textarea class="form-control mb-3" rows="8" placeholder="Message" id="mensaje" name="mensaje"></textarea>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
