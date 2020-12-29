@@ -1,0 +1,52 @@
+img.img-profile {
+    border: 15px solid #0531a2;
+    transition: 0.5s;
+}
+  
+img.img-profile:hover {
+    border: 8px solid #0531a2;
+}
+  
+.img-profile {
+    display: block;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 5rem;
+    transition: transform 0.5s;
+}
+  
+.name:hover {
+    color: #0531a2;
+}
+
+.lastname:hover {
+    color: #000000!important;
+}
+  
+.subheading {
+    font-size: 1.5rem;
+}
+
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+  
+.social-icons .social-icon:hover {
+    background-color: #0531a2;
+}
+  
