@@ -1,0 +1,67 @@
+h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #0531a2;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-decoration: underline;
+}
+  
+.dev-icons {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+  
+.blue {
+    color: #0531a2;
+    font-weight: 500;
+}
+  
+.underline {
+    text-decoration: underline;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 3rem;
+}
+  
+.cplus, .html5, .css3, .javascript, .bootstrap, .mysql, .github  {
+    transition: transform 0.3s;
+}
+  
+.cplus:hover {
+    color: rgb(10, 10, 198);
+    transform: scale(1.5);
+}
+  
+.html5:hover {
+    color: rgb(236,98,49);
+    transform: scale(1.5);
+}
+  
+.css3:hover {
+    color: rgb(41, 101, 241);
+    transform: scale(1.5);
+}
+  
+.javascript:hover {
+    color: rgb(240, 219, 79);
+    transform: scale(1.5);
+}
+  
+.bootstrap:hover {
+    color: rgb(86, 61, 124);
+    transform: scale(1.5);
+}
+  
+.mysql:hover {
+    color: rgb(242, 145, 17);
+    transform: scale(1.5);
+}
+  
+.github:hover {
+    color: rgb(33, 31, 31);
+    transform: scale(1.5);
+}
+  
