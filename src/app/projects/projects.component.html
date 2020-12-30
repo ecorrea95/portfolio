@@ -10,8 +10,11 @@
               <hr>
             </ul>
         </div> 
-        <div class="col-10" *ngFor="let project of projects"> 
-
+        <div class="col-10" *ngIf="selectedProject"> 
+          <h3>{{selectedProject.name | uppercase}}</h3>
+          <img src="{{selectedProject.cover}}" alt="{{selectedProject.name}}">
+          <span>{{selectedProject.comment}}</span>
+          <button> <a href="{{selectedProject.seeproject}}">See Project</a></button>
         </div> 
     </div> 
   </div> 
