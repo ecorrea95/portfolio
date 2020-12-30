@@ -1,8 +1,19 @@
-<ul class="list-group">
-  <li *ngFor="let project of projects">
-    <img src="{{project.image}}" alt="{{project.name}}">
-    <h3>{{project.name}}</h3>
-    <button><a href="{{project.seecode}}">See code</a></button>
-    <button><a href="{{project.seeproject}}">See Project</a></button>
-  </li>
-</ul>
+ <section>
+  <div class="container-fluid h-100"> 
+    <h2 class="text-secondary text-center title">Projects</h2>
+    <div class="row h-100 view"> 
+        <div class="col-2">
+            <ul class="container-fluid" *ngFor="let project of projects">
+              <li>
+                <a href="#">{{project.name}}</a>
+              </li>
+              <hr>
+            </ul>
+        </div> 
+        <div class="col-10" *ngFor="let project of projects"> 
+
+        </div> 
+    </div> 
+  </div> 
+ </section>
+ 
