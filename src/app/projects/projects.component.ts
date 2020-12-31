@@ -23,4 +23,10 @@ export class ProjectsComponent implements OnInit {
     this.selectedProject = project;
   }
 
+  selectedIndex: number = null;
+ 
+  setIndex(index: number) {
+      this.selectedIndex = index;
+  }
+
 }

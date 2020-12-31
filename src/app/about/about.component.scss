@@ -15,48 +15,52 @@
 .list-inline-item:not(:last-child) {
     margin-right: 3rem;
 }
-  
-.cplus, .html5, .css3, .javascript, .bootstrap, .angular, .mysql, .github  {
+
+.dev-cplus, .dev-html5, .dev-css3, .dev-javascript, .dev-bootstrap, .dev-angular, .dev-mysql, .dev-github  {
     transition: transform 0.3s;
     padding: 15px;
 }
   
-.cplus:hover {
+.cplus, .html5, .css3, .javascript, .bootstrap, .angular, .mysql, .github  {
+    display: none;
+}
+  
+.dev-cplus:hover{
     color: rgb(10, 10, 198);
     transform: scale(1.5);
 }
-  
-.html5:hover {
+
+.dev-html5:hover {
     color: rgb(236,98,49);
     transform: scale(1.5);
 }
   
-.css3:hover {
+.dev-css3:hover {
     color: rgb(41, 101, 241);
     transform: scale(1.5);
 }
   
-.javascript:hover {
+.dev-javascript:hover {
     color: rgb(240, 219, 79);
     transform: scale(1.5);
 }
   
-.bootstrap:hover {
+.dev-bootstrap:hover {
     color: rgb(86, 61, 124);
     transform: scale(1.5);
 }
 
-.angular:hover {
+.dev-angular:hover {
     color: #B52E31;
     transform: scale(1.5);
 }
   
-.mysql:hover {
+.dev-mysql:hover {
     color: rgb(242, 145, 17);
     transform: scale(1.5);
 }
   
-.github:hover {
+.dev-github:hover {
     color: rgb(33, 31, 31);
     transform: scale(1.5);
 }
