@@ -1,7 +1,7 @@
  <section id="projects">
   <div class="container-fluid h-100"> 
     <h2 class="text-secondary text-center title">Projects</h2>
-    <div class="row h-100 view"> 
+ <!--   <div class="row h-100 view"> 
         <div class="col-3 height bg-secondary sidebar navbar">
             <div class="container sidebar-item" *ngFor="let project of projects; let i = index" [class.active]="selectedIndex === i" (click)="onSelect(project)" (click)="setIndex(i)">
               <div>{{project.name}}</div>
@@ -10,6 +10,34 @@
         <div class="col-9">
           <app-projectdetail [project] = "selectedProject"></app-projectdetail>
         </div>
-      </div> 
+    </div>-->
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="column">
+          <div class="button-image">
+            <img src="../../assets/img/snakegame.jpg" class="overlay">
+            <span>Multiplayer Snake Game</span>
+            <a href="https://practical-bhabha-5a248a.netlify.app/" target="_blank"><button class="button see-p">See project</button></a>
+            <a href="https://github.com/ecorrea95/SnakeGame" target="_blank"><button class="button see-c">See code</button></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="button-image">
+            <img src="../../assets/img/lavoz.png" class="overlay">
+            <span>La Voz Romántica Website</span>
+            <a href="https://www.miguelangelcorrea.com/" target="_blank"><button class="button see-unique">See project</button></a>
+          </div>
+          <div class="button-image">
+            <img src="../../assets/img/taller1.jpg" class="overlay">
+            <span>Math problem solver</span>
+            <a href="https://github.com/ecorrea95/Taller-I-UDE-2020" target="_blank"><button class="button see-p">See project</button></a>
+            <a href="https://github.com/ecorrea95/Taller-I-UDE-2020" target="_blank"><button class="button see-c">See code</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </div> 
  </section>
+
