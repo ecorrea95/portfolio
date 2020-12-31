@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from '../shared/project';
 import { PROJECTS } from '../shared/projects';
-import { ProjectService } '../services/project.service';
+import { ProjectService } from '../services/project.service';
 
 @Component({
   selector: 'app-projects',
@@ -17,9 +17,11 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
     this.projects = this.projectService.getProjects();
+    //this.projects = this.projectService.getFeaturedProject();
   }
 
   onSelect(project: Project) {
     this.selectedProject = project;
   }
+
 }
