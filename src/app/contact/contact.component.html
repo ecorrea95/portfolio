@@ -1,4 +1,4 @@
-<section class="bg-dark padding" id="contact">
+<!--<section class="bg-dark padding" id="contact">
   <div class="container text-center bg-light rounded">
     <h2 class="mb-4 contact">Contact</h2>
     <div id="errormessage"></div>
@@ -21,4 +21,30 @@
       </div>
     </form>
   </div>
+</section>-->
+
+<section>
+  <div class="container">
+    <p>{{feedbackForm.value | json }} {{ feedbackForm.status | json}}</p>
+    <form novalidate [formGroup]="feedbackForm" #fform="ngForm" (ngSubmit)="onSubmit()">
+      <div class="form-row">
+        <div class="col-4">
+          <input formControlName="firstname" placeholder="First Name" type="text" required>
+          <p *ngIf="feedbackForm.get('firstname').hasError('required') && feedbackForm.get('firstname').touched">First name is required</p>
+          <input formControlName="lastname" placeholder="Last Name" type="text" required>
+          <p *ngIf="feedbackForm.get('lastname').hasError('required') && feedbackForm.get('lastname').touched">Last name is required</p>
+          <input  formControlName="email" placeholder="Email" type="email" required>
+          <p *ngIf="feedbackForm.get('email').hasError('required') && feedbackForm.get('email').touched">Email is required</p>
+        </div>
+        <div class="col-8">
+          <div class="msg">
+            <textarea matInput formControlName="message" placeholder="Your Feedback" rows=12 required></textarea>
+            <p *ngIf="feedbackForm.get('message').hasError('required') && feedbackForm.get('message').touched">Message is required</p>
+          </div>
+          <button type="submit" mat-button class="background-primary text-floral-white">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
 </section>
+
