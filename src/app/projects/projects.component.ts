@@ -9,12 +9,17 @@ import { ProjectService } from '../services/project.service';
 })
 export class ProjectsComponent implements OnInit {
 
-  project: Project;
+  projects: Project[];
+  selectedProject: Project;
 
   constructor(private projectservice: ProjectService) { }
 
   ngOnInit() {
-    this.project = this.projectservice.getFeaturedProject();
+    this.projects = this.projectservice.getProjects();
+  }
+
+  onSelect(project: Project) {
+    this.selectedProject = project;
   }
 
 }
