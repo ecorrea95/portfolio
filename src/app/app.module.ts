@@ -9,9 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
-import { ProjectdetailComponent } from './projectdetail/projectdetail.component';
 
-import { ProjectService } from './services/project.service';
 
 @NgModule({
   declarations: [
@@ -20,15 +18,14 @@ import { ProjectService } from './services/project.service';
     HomeComponent,
     AboutComponent,
     ProjectsComponent,
-    ContactComponent,
-    ProjectdetailComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [ProjectService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
