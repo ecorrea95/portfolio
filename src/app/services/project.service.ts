@@ -9,7 +9,7 @@ export class ProjectService {
 
   constructor() { }
 
-  getProjects(): Project[] {
-    return PROJECTS;
+  getProjects(): Promise<Project[]> {
+    return Promise.resolve(PROJECTS);
   }
 }
