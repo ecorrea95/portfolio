@@ -16,8 +16,9 @@
     margin-right: 3rem;
 }
   
-.cplus, .html5, .css3, .javascript, .bootstrap, .mysql, .github  {
+.cplus, .html5, .css3, .javascript, .bootstrap, .angular, .mysql, .github  {
     transition: transform 0.3s;
+    padding: 15px;
 }
   
 .cplus:hover {
@@ -42,6 +43,11 @@
   
 .bootstrap:hover {
     color: rgb(86, 61, 124);
+    transform: scale(1.5);
+}
+
+.angular:hover {
+    color: #B52E31;
     transform: scale(1.5);
 }
   
