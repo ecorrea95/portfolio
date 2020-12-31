@@ -12,13 +12,4 @@ export class ProjectService {
   getProjects(): Project[] {
     return PROJECTS;
   }
-
-  getProject(id: string): Project {
-    return PROJECTS.filter((project) => (project.id === id))[0];
-  }
-
-  getFeaturedProject(): Project {
-    return PROJECTS.filter((project) => project.featured)[0];
-  }
-  
 }
