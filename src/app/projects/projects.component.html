@@ -2,28 +2,14 @@
   <div class="container-fluid h-100"> 
     <h2 class="text-secondary text-center title">Projects</h2>
     <div class="row h-100 view"> 
-
-
         <div class="col-3">
             <ul class="container-fluid" *ngFor="let project of projects; let i = index" [class.active]="selectedIndex === i" (click)="onSelect(project)" (click)="setIndex(i)">
               <li class="sidebar button">{{project.name}}</li>
             </ul>
         </div> 
-
-
         <div class="col-9">
           <app-projectdetail [project] = "selectedProject"></app-projectdetail>
         </div>
-
-
       </div> 
   </div> 
  </section>
-
- <ul class="sub_modules">
-  <li *ngFor="let subModule of subModules; let i = index" 
-      [class.active]="selectedIndex === i" 
-      (click)="setIndex(i)">
-    <a>{{ subModule.name }}</a>
-  </li>
-</ul>
