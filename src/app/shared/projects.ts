@@ -8,7 +8,7 @@ export const PROJECTS: Project[] = [
         cover: '../../assets/img/snakegame.jpg',
         seecode: 'https://github.com/ecorrea95/SnakeGame',
         seeproject: 'https://practical-bhabha-5a248a.netlify.app/',
-        featured: true
+        featured: false
     },
     {
         id: '1',
@@ -17,7 +17,7 @@ export const PROJECTS: Project[] = [
         cover: '../../assets/img/lavoz.png',
         seecode: '',
         seeproject: 'https://www.miguelangelcorrea.com/',
-        featured: false
+        featured: true
     },
     {
         id: '2',

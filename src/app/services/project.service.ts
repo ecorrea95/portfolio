@@ -13,12 +13,12 @@ export class ProjectService {
     return PROJECTS;
   }
 
-  getProject(id: string) {
+  getProject(id: string): Project {
     return PROJECTS.filter((project) => (project.id === id))[0];
   }
 
   getFeaturedProject(): Project {
     return PROJECTS.filter((project) => project.featured)[0];
   }
-
+  
 }

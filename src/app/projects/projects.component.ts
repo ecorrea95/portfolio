@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from '../shared/project';
-import { PROJECTS } from '../shared/projects';
 import { ProjectService } from '../services/project.service';
 
 @Component({
@@ -10,18 +9,12 @@ import { ProjectService } from '../services/project.service';
 })
 export class ProjectsComponent implements OnInit {
 
-  projects: Project[];
-  selectedProject: Project;
+  project: Project;
 
-  constructor(private projectService: ProjectService) { }
+  constructor(private projectservice: ProjectService) { }
 
   ngOnInit() {
-    this.projects = this.projectService.getProjects();
-    //this.projects = this.projectService.getFeaturedProject();
-  }
-
-  onSelect(project: Project) {
-    this.selectedProject = project;
+    this.project = this.projectservice.getFeaturedProject();
   }
 
 }
