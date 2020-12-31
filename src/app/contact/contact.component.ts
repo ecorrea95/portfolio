@@ -15,6 +15,31 @@ export class ContactComponent implements OnInit {
   feedbackForm: FormGroup;
   feedback: Feedback;
 
+  formErrors = {
+    'firstname': '',
+    'lastname': '',
+    'email': '',
+    'message': ''
+  };
+
+  validationMessages = {
+    'firstname': {
+      'required':      'First Name is required.',
+      'minlength':     'First Name must be at least 3 characters long.'
+    },
+    'lastname': {
+      'required':      'Last Name is required.',
+      'minlength':     'Last Name must be at least 3 characters long.'
+    },
+    'email': {
+      'required':      'Email is required.',
+      'email':         'Email must be valid.'
+    },
+    'message': {
+      'required':      'Email is required.',
+    },
+  };
+
   constructor(private fb: FormBuilder) {
     this.createForm();
    }
@@ -22,13 +47,36 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
   }
 
-  createForm() {
+  createForm(): void {
     this.feedbackForm = this.fb.group({
-      firstname: ['', Validators.required ],
-      lastname: ['', Validators.required ],
-      email: ['', Validators.required ],
+      firstname: ['', [Validators.required, Validators.minLength(3)] ],
+      lastname: ['', [Validators.required, Validators.minLength(3)] ],
+      email: ['', [Validators.required, Validators.email] ],
       message: ['', Validators.required ]
-    })
+    });
+    this.feedbackForm.valueChanges
+    .subscribe(data => this.onValueChanged(data));
+    this.onValueChanged(); //reset validation messages now
+  }
+
+  onValueChanged(data?: any) {
+    if (!this.feedbackForm) { return; }
+    const form = this.feedbackForm;
+    for (const field in this.formErrors) {
+      if (this.formErrors.hasOwnProperty(field)) {
+        // clear previous error message (if any)
+        this.formErrors[field] = '';
+        const control = form.get(field);
+        if (control && control.dirty && !control.valid) {
+          const messages = this.validationMessages[field];
+          for (const key in control.errors) {
+            if (control.errors.hasOwnProperty(key)) {
+              this.formErrors[field] += messages[key] + ' ';
+            }
+          }
+        }
+      }
+    }
   }
 
   onSubmit() {
@@ -42,4 +90,4 @@ export class ContactComponent implements OnInit {
     });
     this.feedbackFormDirective.resetForm();
   }
-}
+

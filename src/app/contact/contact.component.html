@@ -30,16 +30,16 @@
       <div class="form-row">
         <div class="col-4">
           <input formControlName="firstname" placeholder="First Name" type="text" required>
-          <p *ngIf="feedbackForm.get('firstname').hasError('required') && feedbackForm.get('firstname').touched">First name is required</p>
+          <p *ngIf="formErrors.firstname">{{formErrors.firstname}}</p>
           <input formControlName="lastname" placeholder="Last Name" type="text" required>
-          <p *ngIf="feedbackForm.get('lastname').hasError('required') && feedbackForm.get('lastname').touched">Last name is required</p>
+          <p *ngIf="formErrors.lastname">{{formErrors.lastname}}</p>
           <input  formControlName="email" placeholder="Email" type="email" required>
-          <p *ngIf="feedbackForm.get('email').hasError('required') && feedbackForm.get('email').touched">Email is required</p>
+          <p *ngIf="formErrors.email">{{formErrors.email}}</p>
         </div>
         <div class="col-8">
           <div class="msg">
-            <textarea matInput formControlName="message" placeholder="Your Feedback" rows=12 required></textarea>
-            <p *ngIf="feedbackForm.get('message').hasError('required') && feedbackForm.get('message').touched">Message is required</p>
+            <textarea matInput formControlName="message" placeholder="Your message" rows=12 required></textarea>
+            <p *ngIf="formErrors.message">{{formErrors.message}}</p>
           </div>
           <button type="submit" mat-button class="background-primary text-floral-white">Submit</button>
         </div>
