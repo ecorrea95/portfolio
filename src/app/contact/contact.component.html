@@ -1,24 +1,39 @@
-<section>
-  <div class="container">
-    <form novalidate [formGroup]="feedbackForm" #fform="ngForm" (ngSubmit)="onSubmit()" method="POST" data-netlify="true">
-      <div class="form-row">
-        <div class="col-4">
-          <input formControlName="firstname" placeholder="First Name" type="text" required>
-          <p *ngIf="formErrors.firstname">{{formErrors.firstname}}</p>
-          <input formControlName="lastname" placeholder="Last Name" type="text" required>
-          <p *ngIf="formErrors.lastname">{{formErrors.lastname}}</p>
-          <input  formControlName="email" placeholder="Email" type="email" required>
-          <p *ngIf="formErrors.email">{{formErrors.email}}</p>
-        </div>
-        <div class="col-8">
-          <div class="msg">
-            <textarea matInput formControlName="message" placeholder="Your message" rows=12 required></textarea>
+<section id="projects">
+  <div class="container-fluid h-100"> 
+    <h2 class="text-secondary text-center title">Contact</h2>
+    <div class="container bg-secondary pt-3 rounded">
+      <form novalidate [formGroup]="feedbackForm" #fform="ngForm" (ngSubmit)="onSubmit()" method="POST" data-netlify="true">
+        <div class="form-row">
+          <div class="col-4">
+            <div>
+              <input class="form-control mb-3" formControlName="firstname" placeholder="First Name" type="text" required>
+              <p *ngIf="formErrors.firstname">{{formErrors.firstname}}</p>
+            </div>
+            <div>
+              <input class="form-control mb-3" formControlName="lastname" placeholder="Last Name" type="text" required>
+              <p *ngIf="formErrors.lastname">{{formErrors.lastname}}</p>  
+            </div>
+            <div>
+              <input class="form-control mb-3" formControlName="email" placeholder="Email" type="email" required>
+              <p *ngIf="formErrors.email">{{formErrors.email}}</p>  
+            </div>
+            <div>
+              <button type="submit" class="btn btn-primary form-control">Submit</button>
+            </div>
+          </div>
+          <div class="col-8">
+            <textarea class="form-control mb-3" formControlName="message" placeholder="Your message" rows=8 required></textarea>
             <p *ngIf="formErrors.message">{{formErrors.message}}</p>
           </div>
-          <button type="submit" mat-button class="background-primary text-floral-white">Submit</button>
         </div>
+      </form>  
+    </div>
+    <div class="container pt-10">
+      <div class="social-icons text-center">
+        <a class="social-icon about-icon" href="https://www.linkedin.com/in/emiliano-correa/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a class="social-icon about-icon" href="https://github.com/ecorrea95" target="_blank"><i class="fab fa-github"></i></a>
+        <a class="social-icon about-icon" href="mailto:e.correa95@hotmail.com"><i class="fas fa-envelope"></i></a>
       </div>
-    </form>
+    </div>
   </div>
 </section>
-

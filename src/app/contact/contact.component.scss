@@ -1,0 +1,28 @@
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+  
+.social-icons .social-icon:hover {
+    background-color: #0531a2;
+}
+  
+.about-icon {
+    transition: transform 1s;
+}
+  
+.about-icon:hover {
+    transform: rotateY(360deg) scale(1.3);
+}
+  
+.pt-10 {
+    padding-top: 10rem;
+}

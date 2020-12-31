@@ -36,7 +36,7 @@ export class ContactComponent implements OnInit {
       'email':         'Email must be valid.'
     },
     'message': {
-      'required':      'Email is required.',
+      'required':      'Message is required.',
     },
   };
 
@@ -91,3 +91,4 @@ export class ContactComponent implements OnInit {
     this.feedbackFormDirective.resetForm();
   }
 
+}

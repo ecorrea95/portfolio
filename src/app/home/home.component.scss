@@ -1,3 +1,7 @@
+.container-fluid {
+    padding-top: 4%!important;
+}
+
 img.img-profile {
     border: 15px solid #0531a2;
     transition: 0.5s;
@@ -51,7 +55,7 @@ h1 {
 }
   
 .about-icon {
-    transition: transform 0.6s;
+    transition: transform 1s;
 }
   
 .about-icon:hover {

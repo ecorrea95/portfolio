@@ -6,6 +6,33 @@ li {
     list-style-type: none;
 }
 
+.height {
+    height: 75vh;
+}
+
 .active {
-    background-color: green;
+    font-weight: bold;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    background-color: rgb(5, 49, 162);
+}
+
+.sidebar {
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.sidebar-item {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.sidebar-item:hover {
+    background-color: rgba(5, 49, 162, 0.5);
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }

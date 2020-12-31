@@ -20,11 +20,7 @@
     transition: transform 0.3s;
     padding: 15px;
 }
-  
-.cplus, .html5, .css3, .javascript, .bootstrap, .angular, .mysql, .github  {
-    display: none;
-}
-  
+    
 .dev-cplus:hover{
     color: rgb(10, 10, 198);
     transform: scale(1.5);
@@ -65,3 +61,20 @@
     transform: scale(1.5);
 }
   
+.skills:hover {
+    border: 2px solid #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.01);    
+}
+
+.education:hover {
+    border: 2px solid #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.01);    
+}
+
+.experience:hover {
+    border: 2px solid #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.01);    
+}
