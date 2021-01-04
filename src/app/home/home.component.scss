@@ -18,19 +18,24 @@ img.img-profile:hover {
     margin-right: auto;
 }
 
-h1 {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 5rem;
-    transition: transform 0.5s;
+.home-title {
+    font-family: "Arial Black", sans-serif;
+    font-size: 4.5em;
+    letter-spacing: -1px;
+    background-color: #0531a2;
+    color: white;
 }
   
 .name:hover {
-    color: #0531a2;
+    color: #000000;
+}
+
+.lastname {
+    color: #000000!important;
 }
 
 .lastname:hover {
-    color: #000000!important;
+    color: #ffffff!important;
 }
   
 .subheading {
