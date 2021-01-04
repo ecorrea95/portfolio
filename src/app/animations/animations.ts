@@ -26,7 +26,7 @@ import {
                        animate('0.5s ease-in-out', 
                        style({ transform: 'translateX(100%)' }))
                    ], { optional: true }),
-              ])
+              ]),
          ]),
          transition('Home => *', [
               query(':enter, :leave', 
@@ -43,7 +43,7 @@ import {
                        animate('0.5s ease-in-out', 
                        style({ transform: 'translateX(-100%)' }))
                        ], { optional: true }),
-               ])
+               ]),
          ]),
          transition('About => Contact', [
                query(':enter, :leave', 
@@ -129,8 +129,5 @@ import {
                  style({ transform: 'translateX(100%)' }),
             ], { optional: true }),
         ]),
- ]),
-
-
-
+    ]),
  ]);
