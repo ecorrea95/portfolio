@@ -6,9 +6,9 @@ import { ProjectsComponent } from '../projects/projects.component';
 import { ContactComponent} from '../contact/contact.component';
 
 export const routes: Routes = [
-    { path: 'home', component: HomeComponent},
-    { path: 'about', component: AboutComponent},
-    { path: 'projects', component: ProjectsComponent},
-    { path: 'contact', component: ContactComponent},
+    { path: 'home', component: HomeComponent, data: {animation: 'Home'} },
+    { path: 'about', component: AboutComponent, data: {animation: 'About'} },
+    { path: 'projects', component: ProjectsComponent, data: {animation: 'Projects'} },
+    { path: 'contact', component: ContactComponent, data: {animation: 'Contact'} },
     { path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
