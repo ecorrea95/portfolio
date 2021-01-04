@@ -28,12 +28,15 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
               "node_modules/@fortawesome/fontawesome-free/js/brands.js",
               "node_modules/@fortawesome/fontawesome-free/js/solid.js",
-              "node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"
+              "node_modules/@fortawesome/fontawesome-free/js/fontawesome.js",
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+              
             ]
           },
           "configurations": {
