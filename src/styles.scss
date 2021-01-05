@@ -9,11 +9,36 @@ section {
     margin-top: -45px;
 }
 
-.title {
+/*.title {
     font-family: "Arial Black", sans-serif;
     font-size: 2.5em;
     letter-spacing: -1px;
     background-color: #0531a2;
     color: white;
+}*/
+
+.title {
+    position: relative;
 }
 
+.title::before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
