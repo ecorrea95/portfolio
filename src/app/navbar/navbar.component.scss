@@ -5,3 +5,25 @@
 .nav-link:hover {
     font-weight: bold;
 }
+
+//Logo contraido
+.logo {
+    font-size: 1.5rem;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    max-width: 0;
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+
+.logo:hover .hidden {
+    opacity: 1;
+    max-width: 1em;
+}
+

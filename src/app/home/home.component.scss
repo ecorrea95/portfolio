@@ -18,26 +18,35 @@ img.img-profile:hover {
     margin-right: auto;
 }
 
-.home-title {
-    font-family: "Arial Black", sans-serif;
-    font-size: 4.5em;
-    letter-spacing: -1px;
-    background-color: #0531a2;
-    color: white;
+//Version ORIGINAL
+/*.home-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 5rem;
+    transition: transform 0.5s;
 }
   
 .name:hover {
-    color: #000000;
-}
-
-.lastname {
-    color: #000000!important;
+    color: #0531a2;
 }
 
 .lastname:hover {
-    color: #ffffff!important;
-}
+    color: #000000!important;
+}*/
   
+//Version con bordes
+.titleborders {
+    font-size: 5rem;
+    font-weight: bold;
+    border-bottom: #0531a2 solid 14px;
+    border-top: #0531a2 solid 14px;
+}
+
+.firstletter {
+    color: #0531a2;
+    font-weight: bolder;
+}
+
 .subheading {
     font-size: 1.5rem;
 }
@@ -66,4 +75,3 @@ img.img-profile:hover {
 .about-icon:hover {
     transform: rotateY(360deg) scale(1.3);
 }
-  
