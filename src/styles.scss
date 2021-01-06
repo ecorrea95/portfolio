@@ -17,28 +17,10 @@ section {
     color: white;
 }*/
 
+.container-title{
+    width: 20%;
+}
+
 .title {
     position: relative;
-}
-
-.title::before {
-    content: "";
-    display: block;
-    width: 120px;
-    height: 2px;
-    background: #000;
-    position: absolute;
-    left: 0;
-    top: 50%;
-}
-
-.title::after {
-    content: "";
-    display: block;
-    width: 120px;
-    height: 2px;
-    background: #000;
-    position: absolute;
-    right: 0;
-    top: 50%;
 }

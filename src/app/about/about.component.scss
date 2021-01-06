@@ -7,9 +7,10 @@
     color: #0531a2;
     font-weight: 500;
 }
-  
-.underline {
-    text-decoration: underline;
+
+.title-card {
+    color: #0531a2;
+    margin-bottom: 3%;
 }
 
 .list-inline-item:not(:last-child) {
@@ -77,4 +78,10 @@
     border: 2px solid #000000;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: scale(1.01);    
+}
+
+.universidad {
+    font-size: 3rem;
+    padding-left: 0%;
+    padding-right: 0%;
 }
