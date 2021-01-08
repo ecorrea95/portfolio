@@ -1,8 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+/* Bootstrap */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+
 
 body {
     padding-top: 120px;
+    // font-family: 'Montserrat', sans-serif!important;
+    // font-family: 'Roboto', sans-serif!important;
+    font-family: 'Poppins', sans-serif!important;
+    // font-family: 'Noto Sans TC', sans-serif!important;
 }
 
 section {

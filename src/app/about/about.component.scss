@@ -5,12 +5,13 @@
   
 .blue {
     color: #0531a2;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .title-card {
     color: #0531a2;
     margin-bottom: 3%;
+    font-weight: bold;
 }
 
 .list-inline-item:not(:last-child) {
@@ -82,6 +83,12 @@
 
 .universidad {
     font-size: 3rem;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.trabajo {
+    font-size: 1.5rem;
     padding-left: 0%;
     padding-right: 0%;
 }
