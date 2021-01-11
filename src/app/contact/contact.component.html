@@ -1,38 +1,111 @@
 <section id="projects">
   <div class="container-fluid h-100"> 
     <h2 class="container col-3 text-center title">Contact</h2>
-    <div class="container bg-secondary pt-3 rounded">
-      <form novalidate [formGroup]="feedbackForm" #fform="ngForm" (ngSubmit)="onSubmit()" method="POST" data-netlify="true">
-        <div class="form-row">
-          <div class="col-4">
-            <div>
+
+    <div class="row justify-content-center pt-5">
+      <div class="col-4 align-self-center">
+        <div class="col-12">
+          <ul>
+            <li>
+              <div class="row">
+                <div class="col-3">
+                  <i class="fas fa-globe-americas social-icon earth"></i>
+                </div>
+                <div class="col-9 align-self-center">
+                  <span>Montevideo, Uruguay</span>
+                </div>  
+              </div>
+              <hr>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-3">
+                  <i class="fab fa-whatsapp-square social-icon whatsapp"></i>
+                </div>
+                <div class="col-9 align-self-center">
+                  <a href="https://api.whatsapp.com/send?phone=59894691759" target="_blank">
+                    +(598) 94 69 17 59
+                  </a>
+                </div>  
+              </div>
+              <hr>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-3">
+                  <i class="fas fa-envelope social-icon outlook"></i>
+                </div>
+                <div class="col-9 align-self-center">
+                  <a href="mailto:e.correa95@hotmail.com">
+                    e.correa95@hotmail.com
+                  </a>
+                </div>  
+              </div>
+              <hr>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-3">
+                  <i class="fab fa-linkedin social-icon linkedin"></i>
+                </div>
+                <div class="col-9 align-self-center">
+                  <a href="https://www.linkedin.com/in/emiliano-correa/" target="_blank">
+                    LinkedIn
+                  </a>
+                </div>  
+              </div>
+              <hr>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-3">
+                  <i class="fab fa-github social-icon github"></i>
+                </div>
+                <div class="col-9 align-self-center">
+                  <a href="https://github.com/ecorrea95" target="_blank">
+                    Github
+                  </a>
+                </div>  
+              </div>
+            </li>
+          </ul>  
+        </div>
+      </div>
+
+
+
+
+      <div class="col-4 bg-light contact">
+        <h4 class="text-center pt-2">Send a message</h4>
+        <form novalidate [formGroup]="feedbackForm" #fform="ngForm" (ngSubmit)="onSubmit()" method="POST" data-netlify="true">
+          <div class="form-row">
+            <div class="col-6">
               <input class="form-control mb-3" formControlName="firstname" placeholder="First Name" type="text" required>
               <p *ngIf="formErrors.firstname">{{formErrors.firstname}}</p>
             </div>
-            <div>
+            <div class="col-6">
               <input class="form-control mb-3" formControlName="lastname" placeholder="Last Name" type="text" required>
-              <p *ngIf="formErrors.lastname">{{formErrors.lastname}}</p>  
+              <p *ngIf="formErrors.lastname">{{formErrors.lastname}}</p> 
             </div>
-            <div>
+          </div>
+          <div class="form-row">
+            <div class="col-12">
               <input class="form-control mb-3" formControlName="email" placeholder="Email" type="email" required>
               <p *ngIf="formErrors.email">{{formErrors.email}}</p>  
             </div>
-            <div>
+          </div>
+          <div class="form-row">
+            <div class="col-12">
+              <textarea class="form-control mb-3" formControlName="message" placeholder="Your message" rows=8 required></textarea>
+              <p *ngIf="formErrors.message">{{formErrors.message}}</p>
+            </div>
+          </div>
+          <div class="form-row justify-content-center">
+            <div class="col-4 pb-3">
               <button type="submit" class="btn btn-primary form-control">Submit</button>
             </div>
           </div>
-          <div class="col-8">
-            <textarea class="form-control mb-3" formControlName="message" placeholder="Your message" rows=8 required></textarea>
-            <p *ngIf="formErrors.message">{{formErrors.message}}</p>
-          </div>
-        </div>
-      </form>  
-    </div>
-    <div class="container pt-10">
-      <div class="social-icons text-center">
-        <a class="social-icon about-icon" href="https://www.linkedin.com/in/emiliano-correa/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a class="social-icon about-icon" href="https://github.com/ecorrea95" target="_blank"><i class="fab fa-github"></i></a>
-        <a class="social-icon about-icon" href="mailto:e.correa95@hotmail.com"><i class="fas fa-envelope"></i></a>
+        </form>
       </div>
     </div>
   </div>
