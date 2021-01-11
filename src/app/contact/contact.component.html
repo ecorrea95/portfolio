@@ -3,7 +3,7 @@
     <h2 class="container col-3 text-center title">Contact</h2>
 
     <div class="row justify-content-center pt-5">
-      <div class="col-4 align-self-center">
+      <div class="col-md-4 col-sm-12 align-self-center">
         <div class="col-12">
           <ul>
             <li>
@@ -71,12 +71,8 @@
           </ul>  
         </div>
       </div>
-
-
-
-
-      <div class="col-4 bg-light contact">
-        <h4 class="text-center pt-2">Send a message</h4>
+      <div class="col-md-4 col-sm-10 bg-light contact">
+        <h4 class="text-center pt-2 message">Send a message</h4>
         <form novalidate [formGroup]="feedbackForm" #fform="ngForm" (ngSubmit)="onSubmit()" method="POST" data-netlify="true">
           <div class="form-row">
             <div class="col-6">
