@@ -1,0 +1,140 @@
+.title {
+    margin-bottom: 1%!important;
+}
+
+li {
+    list-style-type: none;
+}
+
+.height {
+    height: 75vh;
+}
+
+.active {
+    font-weight: bold;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    background-color: rgb(5, 49, 162);
+}
+
+.sidebar {
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.sidebar-item {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.sidebar-item:hover {
+    background-color: rgba(5, 49, 162, 0.5);
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+/* Create equal columns that sits next to each other */
+.column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+    padding-bottom: 4rem;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    max-width: 100%;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  .button-image {
+    position: relative;
+  }
+  
+  .button-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .button-image span {
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    left: 0%;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    padding: 12px 24px;
+    display: none;
+  }
+  
+  .button-image .button {
+    position: absolute;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    display: none;
+  }
+  
+  .see-unique {
+    left: 50%;
+  }
+  
+  .see-unique:hover {
+    background-color: #0531a2!important;
+  }
+  
+  .see-p {
+    left: 30%;
+  }
+  
+  .see-p:hover {
+    background-color: #0531a2!important;
+  }
+  
+  .see-c {
+    left: 70%;
+  }
+  
+  .see-c:hover {
+    background-color: #2b3339!important;
+  }
+  
+  .overlay {
+    opacity: 1;
+    transition: .5s ease;
+  }
+  
+  .button-image:hover .overlay {
+    opacity: 0.5;
+  }
+  
+  .button-image:hover .button, .button-image:hover span {
+    display: inline;
+  }
+  
+  .button-image:hover .button {
+    opacity: 1;
+  }
+

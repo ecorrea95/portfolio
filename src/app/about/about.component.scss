@@ -1,0 +1,94 @@
+.dev-icons {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+  
+.blue {
+    color: #0531a2;
+    font-weight: bold;
+}
+
+.title-card {
+    color: #0531a2;
+    margin-bottom: 3%;
+    font-weight: bold;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.dev-cplus, .dev-html5, .dev-css3, .dev-javascript, .dev-bootstrap, .dev-angular, .dev-mysql, .dev-github  {
+    transition: transform 0.3s;
+    padding: 15px;
+}
+    
+.dev-cplus:hover{
+    color: rgb(10, 10, 198);
+    transform: scale(1.5);
+}
+
+.dev-html5:hover {
+    color: rgb(236,98,49);
+    transform: scale(1.5);
+}
+  
+.dev-css3:hover {
+    color: rgb(41, 101, 241);
+    transform: scale(1.5);
+}
+  
+.dev-javascript:hover {
+    color: rgb(240, 219, 79);
+    transform: scale(1.5);
+}
+  
+.dev-bootstrap:hover {
+    color: rgb(86, 61, 124);
+    transform: scale(1.5);
+}
+
+.dev-angular:hover {
+    color: #B52E31;
+    transform: scale(1.5);
+}
+  
+.dev-mysql:hover {
+    color: rgb(242, 145, 17);
+    transform: scale(1.5);
+}
+  
+.dev-github:hover {
+    color: rgb(33, 31, 31);
+    transform: scale(1.5);
+}
+  
+.skills:hover {
+    border: 2px solid #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.01);    
+}
+
+.education:hover {
+    border: 2px solid #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.01);    
+}
+
+.experience:hover {
+    border: 2px solid #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.01);    
+}
+
+.universidad {
+    font-size: 3rem;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.trabajo {
+    font-size: 1.5rem;
+    padding-left: 0%;
+    padding-right: 0%;
+}

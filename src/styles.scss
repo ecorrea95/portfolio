@@ -1,0 +1,29 @@
+/* Bootstrap */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+body {
+    padding-top: 120px;
+    font-family: 'Poppins', sans-serif!important;
+}
+
+section {
+    margin-top: -45px;
+}
+
+.title {
+    font-family: 'Mulish', sans-serif;
+    font-size: 2.5em;
+    text-decoration: underline;
+}
+
+.container-title{
+    width: 20%;
+}
+
+.title {
+    position: relative;
+}
