@@ -18,7 +18,7 @@
     margin-right: 3rem;
 }
 
-.dev-cplus, .dev-html5, .dev-css3, .dev-javascript, .dev-bootstrap, .dev-angular, .dev-mysql, .dev-github  {
+.dev-cplus, .dev-html5, .dev-css3, .dev-javascript, .dev-bootstrap, .dev-angular, .dev-mysql  {
     transition: transform 0.3s;
     padding: 15px;
 }
@@ -58,8 +58,13 @@
     transform: scale(1.5);
 }
   
-.dev-github:hover {
+.dev-github  {
     color: rgb(33, 31, 31);
+    transition: transform 0.3s;
+    padding: 15px;
+}
+
+.dev-github:hover {
     transform: scale(1.5);
 }
   
