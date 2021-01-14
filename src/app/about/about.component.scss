@@ -18,7 +18,7 @@
     margin-right: 3rem;
 }
 
-.dev-cplus, .dev-html5, .dev-css3, .dev-javascript, .dev-bootstrap, .dev-angular, .dev-mysql  {
+.dev-cplus, .dev-html5, .dev-css3, .dev-javascript, .dev-bootstrap, .dev-angular, .dev-mysql, .dev-github  {
     transition: transform 0.3s;
     padding: 15px;
 }
@@ -58,13 +58,8 @@
     transform: scale(1.5);
 }
   
-.dev-github  {
-    color: rgb(33, 31, 31);
-    transition: transform 0.3s;
-    padding: 15px;
-}
-
 .dev-github:hover {
+    color: rgb(33, 31, 31);
     transform: scale(1.5);
 }
   
@@ -96,4 +91,15 @@
     font-size: 1.5rem;
     padding-left: 0%;
     padding-right: 0%;
+}
+
+.padding-bottom {
+    padding-bottom: 4rem;
+}
+
+.name {
+    position: absolute;
+    font-size: 1rem;
+    margin-top: -20px;
+    margin-left: -4px;
 }
