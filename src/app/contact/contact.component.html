@@ -73,7 +73,7 @@
       </div>
       <div class="col-md-4 col-sm-10 bg-light contact">
         <h4 class="text-center pt-2 message">Send a message</h4>
-        <form novalidate [formGroup]="feedbackForm" #fform="ngForm" (ngSubmit)="onSubmit()" method="POST" data-netlify="true">
+        <form novalidate [formGroup]="feedbackForm" #fform="ngForm"method="POST" data-netlify="true">
           <div class="form-row">
             <div class="col-6">
               <input class="form-control mb-3" formControlName="firstname" placeholder="First Name" type="text" required>
