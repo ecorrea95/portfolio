@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -12,6 +13,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { ContactService } from './contact.service';
 
 @NgModule({
   declarations: [
@@ -27,9 +29,10 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
